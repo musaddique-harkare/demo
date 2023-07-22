@@ -1,7 +1,7 @@
   FROM ubuntu:latest
   MAINTAINER musaddique.harkare@gmail.com
-  RUN yum install -y httpd \
-   zip \
+  RUN apt-get httpd \
+    zip \
    unzip
   ADD https://www.free-css.com/assets/files/free-css-templates/download/page292/honey.zip /var/www/html/
   WORKDIR /var/www/html
