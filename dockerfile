@@ -1,6 +1,6 @@
   FROM ubuntu:latest
   MAINTAINER musaddique.harkare@gmail.com
-  RUN sudo apt install httpd \
+  RUN sudo apt install apache2
     zip \
    unzip
   ADD https://www.free-css.com/assets/files/free-css-templates/download/page292/honey.zip /var/www/html/
