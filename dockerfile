@@ -1,9 +1,6 @@
-  FROM ubuntu:latest
+  FROM centos:latest
   MAINTAINER musaddique.harkare@gmail.com
-  sudo apt install apache2 -y
-  apt install zip -y
-    zip \
-   unzip
+  RUN yum install -y httpd zip unzip
   ADD https://www.free-css.com/assets/files/free-css-templates/download/page292/honey.zip /var/www/html/
   WORKDIR /var/www/html
   RUN unzip honey.zip
